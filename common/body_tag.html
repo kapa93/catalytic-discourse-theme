@@ -1,9 +1,14 @@
 <script type="text/javascript">
   $(document).ready(function(){
+
     $(document).keypress(function(e) {
-        if(e.which == 13) {
-            console.log('You pressed enter!');
+      if(e.which == 13) {
+        if $('#search-query').val() {
+          var query = $('#search-query').val();
+          console.log("you searched for: " + query);
         }
+      }
     });
+
   });
 </script>
