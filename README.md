@@ -1,4 +1,3 @@
-## Material Design Stock Theme
+## Custom Discourse Theme
 
-More info at: https://meta.discourse.org/t/material-design-stock-theme/47142?u=falco
 
