@@ -1,11 +1,11 @@
 <script type="text/javascript">
   $(document).ready(function(){
 
+    /* Basically a hack in order to enable custom search form */
     $(document).keypress(function(e) {
       if(e.which == 13) {
         if $('#search-query').val() {
-          var query = $('#search-query').val();
-          console.log("you searched for: " + query);
+          var query = $('#search-query').text();
         }
       }
     });
