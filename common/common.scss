@@ -150,6 +150,7 @@ div#main-outlet {
     border: none;
     color: #08c;
     text-transform: capitalize;
+    background: none !important;
 }
 
 .nav-pills>li>a {
@@ -201,4 +202,31 @@ td.num {
     border: none !important;
 }
 
+a {
+    cursor: pointer !important;
+}
+
+.list-cell, .table-heading, .category-list td, .category-list th {
+    color: #000;
+}
+
+.latest-topic-list .table-heading, .top-topic-list .table-heading {
+    color: #000;
+}
+
+.latest-topic-list {
+    .latest-topic-list-item {
+        .main-link {
+            a {
+                color: #000 !important;
+            }
+        }
+    }
+}
+
+.topic-last-activity {
+    padding-right: 20px;
+    top: 3px;
+    position: relative;
+}
 
