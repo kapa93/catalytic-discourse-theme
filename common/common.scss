@@ -155,8 +155,9 @@ div#main-outlet {
 
 .list-controls .combo-box .combo-box-header {
     border: none;
-    color: #08c;
+    color: #08c !important;
     text-transform: capitalize;
+    background: none !important;
 }
 
 .list-controls {
@@ -266,6 +267,9 @@ div.column.categories {
 
 .category-list, .latest-topic-list {
     border: 1px solid #e9e9e9;
+}
+
+.category-list, .topic-list, .latest-topic-list {
     box-shadow: none;
 }
 
