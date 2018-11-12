@@ -2,7 +2,7 @@
   $(document).ready(function(){
       
     var updateBadges = function() {
-        $('td.num span.number').each(function(){
+        $('.num span.number').each(function(){
             if ($(this).text() !== "0" ) {
                 $(this).css('background-color', '#33CCCC !important');
             }            

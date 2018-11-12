@@ -22,6 +22,11 @@
   background-color: lighten($secondary, 10%);
 }
 
+ul.d-header-icons {
+  position: relative;
+  top: -145px;
+}
+
 //underline navigation links
 .nav-pills > li.active > a,
 .nav-pills > li > a.active {
