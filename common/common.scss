@@ -45,3 +45,55 @@ body textarea {
   max-width: 100% !important;
   height: auto;
 }
+
+img#site-logo {
+  display: none !important;
+}
+
+.d-header {
+  box-shadow: none !important;
+}
+
+.search-advanced-options {
+    .container {
+        position: relative !important;
+        width: 100% !important;
+    }
+}
+
+.user-menu .menu-panel {
+    top: -98px !important;
+}
+
+.d-header-icons .d-icon-search {
+  display: none !important;
+}
+
+.search-container .search-advanced .search-info {
+  border-bottom: 1px solid #e9e9e9 !important;
+}
+
+.fps-result {
+    box-shadow: none !important;
+}
+
+.topic-title {
+    color: black !important;
+    &:hover {
+        color: #0aadff !important;
+    }
+}
+
+.header-buttons {
+  position: relative !important;
+  top: -133px !important;
+  right: -20px !important;
+}
+
+li.current-user {
+    a {
+        padding: 0 !important;
+    }
+}
+
+
