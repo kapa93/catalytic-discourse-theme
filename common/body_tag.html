@@ -1,9 +1,28 @@
 <script type="text/javascript">
   $(document).ready(function(){
-    $('td.num span.number').each(function(){
-        if ($(this).text() !== "0" ) {
-            $(this).css('background-color', '#33CCCC !important');
-        }            
-    });
+      
+    var updateBadges = function() {
+        $('td.num span.number').each(function(){
+            if ($(this).text() !== "0" ) {
+                $(this).css('background-color', '#33CCCC !important');
+            }            
+        });
+    }
+    
+    updateBadges();
+      
+    var targetNode = document.getElementById('main');
+    var config = { attributes: true, childList: true, subtree: true };
+    
+    // Callback function to execute when mutations are observed
+    var callback = function(mutationsList, observer) {
+        updateBadges();
+    };
+    
+    // Create an observer instance linked to the callback function
+    var observer = new MutationObserver(callback);
+
+    // Start observing the target node for configured mutations
+    observer.observe(targetNode, config);
   });
 </script>
