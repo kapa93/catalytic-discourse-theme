@@ -280,3 +280,7 @@ div.column.categories {
 .topic-list-main-link a.title, .topic-list .main-link a.title, .latest-topic-list-item .main-link a.title {
     word-break: normal;
 }
+
+.admin-main-nav {
+    z-index: 10;
+}
