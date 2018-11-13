@@ -16,6 +16,12 @@ body {
     margin-bottom: 10px;
 }
 
+textarea, select, input, button { outline: none !important; }
+
+input:focus {
+    outline:none !important;
+}
+
 body input,
 body button,
 body select,
@@ -40,6 +46,7 @@ img#site-logo {
     position: relative !important;
     width: 60% !important;
     z-index: 5 !important;
+    float: left !important;
     
     @media screen and (max-width: 670px) {
         width: 100%;
@@ -55,6 +62,12 @@ img#site-logo {
 
 .search-container .search-advanced .search-info {
   border-bottom: 1px solid #e9e9e9 !important;
+}
+
+.search-field {
+    input {
+        padding: 1em 1em .85em 2.75em !important;
+    }
 }
 
 .user-menu .menu-panel {
@@ -162,6 +175,15 @@ div#main-outlet {
 
 .list-controls {
     margin-bottom: 0;
+
+    .navigation-container {
+        margin-top: 10px !important;
+        margin-top: 10px !important;
+    }
+
+    div.categories-admin-dropdown {
+        float: none !important;
+    }
 }
 
 .nav-pills>li>a {
@@ -174,6 +196,11 @@ div#main-outlet {
 
 .nav-pills>li.active>a, .nav-pills>li>a.active {
     border-bottom: 2px solid #08c !important;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active {
+    position: relative !important;
+    top: -1px !important;
 }
 
 .posts-map {
@@ -213,7 +240,7 @@ div#main-outlet {
 
 .select-kit.combo-box .select-kit-header.is-focused {
     box-shadow: none !important;
-    border: none !important;
+    border: none;
 }
 
 a {
@@ -283,4 +310,87 @@ div.column.categories {
 
 .admin-main-nav {
     z-index: 10 !important;
+}
+
+// users page
+.directory {
+    div.clearfix {
+        position: relative !important;
+        z-index: 5 !important;
+        width: 60% !important;
+        @media screen and (max-width: 670px) {
+            width: 100% !important;
+        }
+    }
+
+    input.filter-name {
+        float: left !important;
+        margin-left: 40px !important;
+        border-radius: 5px !important;
+        border: 1px solid #ababab !important;
+    }
+}
+
+// badges page
+section.ember-view {
+    div.badges {
+        h1 {
+            position: relative !important;
+            z-index: 5 !important;
+            width: 60% !important;
+            @media screen and (max-width: 670px) {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+// groups page
+div.groups-header {
+    position: relative !important;
+    z-index: 5 !important;
+    width: 60% !important;
+    flex-direction: column-reverse !important;
+    display: flex !important;
+    margin-bottom: 25px !important;
+    margin-top: 10px !important;
+    @media screen and (max-width: 670px) {
+        width: 100% !important;
+    }
+
+    button.groups-header-new {
+        width: 126px !important;
+        margin-top: 10px !important;
+        background-color: #33cccc !important;
+        color: #fff !important;
+        padding: 7px 12px 6px 12px !important;
+        font-size: 1.1em !important;
+
+        i.fa-plus {
+            position: relative !important;
+            top: 1px !important;
+            margin-right: 4px !important;
+        }
+    }
+
+    .groups-header-filters {
+        input {
+            border-radius: 5px !important;
+            margin-right: 5px !important;
+            outline: none !important;
+
+            @media screen and (max-width: 424px) {
+                margin-bottom: 10px !important;
+            }
+        }
+        .select-kit.combo-box .select-kit-header {
+            font-weight: 400 !important;
+            border-radius: 5px !important;
+            border: 1px solid #919191 !important;
+        }
+    }
+}
+
+.select-kit.is-expanded .select-kit-body {
+    border-radius: 5px !important;
 }
