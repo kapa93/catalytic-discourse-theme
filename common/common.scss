@@ -193,8 +193,8 @@ div#main-outlet {
     margin-bottom: 0;
 
     .navigation-container {
-        margin-top: 10px !important;
-        margin-bottom: 18px !important;
+        margin-top: 13px !important;
+        margin-bottom: -15px !important;
     }
 
     div.categories-admin-dropdown {
@@ -211,7 +211,7 @@ div#main-outlet {
         position: relative !important;
         box-shadow: none !important;
         padding: 7px 20px 6px 5px !important;
-        top: -1px !important;
+        top: 0 !important;
         right: 0 !important;
 
         span.d-button-label {
