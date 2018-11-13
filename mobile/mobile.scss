@@ -5,7 +5,6 @@
 
 //create conversation cards
 .topic-body {
-  @include boxShadow;
   background-color: lighten($secondary, 10%);
   margin-top: 10px;
   padding: 20px;
@@ -62,9 +61,14 @@ aside.quote {
   }
 }
 
+img.avatar {
+    width: 34px !important;
+    height: 34px !important;
+}
 
 .topic-list-main-link a.title, .topic-list .main-link a.title, .latest-topic-list-item .main-link a.title {
     font-size: 16px !important;
+    color: #000 !important;
 }
 
 button#create-topic {
@@ -72,4 +76,45 @@ button#create-topic {
     padding-left: 8px !important;
     padding-right: 0 !important;
     height: 32px !important;
+}
+
+.nav-pills>li.active>a, .nav-pills>li {
+    border: 1px solid #00A5F7 !important;
+    font-size: 16px !important;
+    padding: 0;
+    padding-bottom: 6px !important;
+    height: 31px !important;
+    border-radius: 3px !important;
+    background-color: transparent !important;
+    outline: none !important;
+    position: relative !important;
+    bottom: -1px !important;
+    
+    a {
+        color: #00A5F7 !important;
+        height: 31px !important;
+        border-radius: 5px !important;
+        outline: none !important;
+        background: transparent !important;
+        background-color: transparent !important;
+    }
+}
+
+a.home-link {
+    bottom: -4px !important;
+}
+
+.header-titles {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.d-header {
+    box-shadow: none !important;
+    z-index: 1 !important;
+}
+
+.search-container, section.ember-view {
+    position: relative !important;
+    z-index: 5 !important;
 }

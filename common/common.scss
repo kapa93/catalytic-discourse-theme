@@ -456,3 +456,55 @@ div.groups-header {
 .select-kit.is-expanded .select-kit-body {
     border-radius: 5px !important;
 }
+
+.search-field {
+  background-color: #F2F3F6 !important;
+  border-style: none !important;
+  border-radius: 6px !important;
+  position: relative !important;
+  margin-top: .5em !important;
+  margin-bottom: 9px !important;
+  margin-top: 10px !important;
+  
+  .fa-search {
+    position: absolute !important;
+    bottom: 18px !important;
+    left: 20px !important;
+    font-size: 15px !important;
+    z-index: 500 !important;
+    color: #868686 !important;
+  }
+  
+  input {
+    background-color: transparent !important;
+    border-style: none !important;
+    font-size: 16px !important;
+    color: #868686 !important;
+    padding: 1em 1em 1em 2.75em !important;
+    width: 100% !important;
+    border-radius: 6px !important;
+    position: relative !important;
+    transition: all 0.1s ease-in-out !important;
+    margin-bottom: 0 !important;
+    
+    &:focus {
+      outline: 0 !important;
+      background: #FFFFFF !important;
+      box-shadow: 0 1px 0 #f1f1f1, 0 2px 5px 2px rgba(0,0,0,0.1) !important;
+      z-index: 200 !important;
+      
+    }
+  }
+  
+}
+
+a.home-link {
+    display: inline-block !important;
+    font-size: 17px !important;
+    position: relative !important;
+    bottom: -8px !important;
+    color: #000000 !important;
+    border-left: 1px solid #B5B5B5 !important;
+    padding-left: 10px !important;
+    margin-left: 5px !important;
+}
