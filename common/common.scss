@@ -47,9 +47,25 @@ img#site-logo {
     width: 60% !important;
     z-index: 5 !important;
     float: left !important;
-    
-    @media screen and (max-width: 670px) {
-        width: 100%;
+
+    @media screen and (min-width: 1472px) {
+        width: 40% !important; 
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 46% !important;
+    }
+
+    @media screen and (min-width: 1088px) {
+        width: 56% !important;
+    }
+
+    @media screen and (max-width: 925px) {
+        width: 69% !important;
+    }
+
+    @media screen and (max-width: 780px) {
+        width: 100% !important;
     }
 }
 
@@ -183,6 +199,29 @@ div#main-outlet {
 
     div.categories-admin-dropdown {
         float: none !important;
+    }
+
+    button#create-topic {
+        text-indent: 4px !important;
+        width: 127px !important;
+        height: 31px !important;
+        font-size: 1.1em !important;
+        color: #fff !important;
+        border-radius: 5px !important;
+        position: relative !important;
+        box-shadow: none !important;
+        padding: 7px 20px 6px 5px !important;
+        top: -1px !important;
+        right: 0 !important;
+
+        span.d-button-label {
+            display: inline-block !important;
+        }
+
+        i {
+            position: relative !important;
+            top: .7px !important;
+        }
     }
 }
 
