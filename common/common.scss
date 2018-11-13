@@ -270,7 +270,7 @@ div.column.categories {
 }
 
 .category-list, .topic-list, .latest-topic-list {
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
 .alert-bootstrap-mode, .alert-too-few-topics {
