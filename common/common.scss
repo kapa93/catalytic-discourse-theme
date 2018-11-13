@@ -44,12 +44,12 @@ img#site-logo {
 
 .navigation-container {
     position: relative !important;
-    width: 60% !important;
+    width: 45% !important;
     z-index: 5 !important;
     float: left !important;
 
-    @media screen and (max-width: 925px) {
-        width: 69% !important;
+    @media screen and (max-width: 971px) {
+        width: 56% !important;
     }
 
     @media screen and (max-width: 780px) {
@@ -57,15 +57,15 @@ img#site-logo {
     }
 
     @media screen and (min-width: 1088px) {
-        width: 57% !important;
+        width: 45% !important;
     }
 
     @media screen and (min-width: 1280px) {
-        width: 47% !important;
+        width: 37% !important;
     }
 
     @media screen and (min-width: 1472px) {
-        width: 40% !important; 
+        width: 32% !important; 
     }
 }
 
@@ -96,6 +96,10 @@ img#site-logo {
             display: none !important;
             z-index: -1 !important;
         }
+    }
+
+    .header-dropdown-toggle:nth-child(2) {
+        margin-right: 8px !important;
     }
 }
 
@@ -183,7 +187,7 @@ div#main-outlet {
 }
 
 .list-controls .combo-box .combo-box-header {
-    color: #00A5F7 !important;
+    color: #000 !important;
     font-weight: 500 !important;
     text-transform: capitalize;
     background: none !important;
@@ -216,14 +220,14 @@ div#main-outlet {
     button#create-topic {
         text-indent: 4px !important;
         width: 127px !important;
-        height: 31px !important;
-        font-size: 1.1em !important;
+        height: 31px;
+        font-size: 1.1em;
         color: #fff !important;
         border-radius: 5px !important;
         position: relative !important;
         box-shadow: none !important;
         background-color: #00A5F7 !important;
-        padding: 7px 20px 6px 5px !important;
+        padding: 7px 20px 6px 5px;
         top: 0 !important;
         right: 0 !important;
 
@@ -245,6 +249,10 @@ div#main-outlet {
     &:hover {
         color: #CCCCCC !important;
     }
+}
+
+.nav-pills>li:nth-child(5) {
+    display: none !important;
 }
 
 .nav-pills>li.active>a, .nav-pills>li>a.active {
