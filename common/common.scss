@@ -48,24 +48,24 @@ img#site-logo {
     z-index: 5 !important;
     float: left !important;
 
-    @media screen and (min-width: 1472px) {
-        width: 40% !important; 
-    }
-
-    @media screen and (min-width: 1280px) {
-        width: 46% !important;
-    }
-
-    @media screen and (min-width: 1088px) {
-        width: 56% !important;
-    }
-
     @media screen and (max-width: 925px) {
         width: 69% !important;
     }
 
     @media screen and (max-width: 780px) {
         width: 100% !important;
+    }
+
+    @media screen and (min-width: 1088px) {
+        width: 56% !important;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 46% !important;
+    }
+
+    @media screen and (min-width: 1472px) {
+        width: 40% !important; 
     }
 }
 
