@@ -24,5 +24,11 @@
 
     // Start observing the target node for configured mutations
     observer.observe(targetNode, config);
+
+    // Hide create-topic button on categories page
+    if(window.location.href.indexOf("categories") > -1) {
+       $('button#create-topic').hide();
+    }
+    
   });
 </script>
