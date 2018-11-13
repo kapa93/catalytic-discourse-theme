@@ -1,6 +1,7 @@
 <script type="text/javascript">
   $(document).ready(function(){
       
+    // Updates badge background-color if string is not equal to 0
     var updateBadges = function() {
         $('.num span.number').each(function(){
             if ($(this).text() !== "0" ) {
@@ -8,7 +9,15 @@
             }            
         });
     }
+
+    // Hides create-topic button on categories page
+    var hideButton = function() {
+        if(window.location.href.indexOf("categories") > -1) {
+           $('button#create-topic').hide();
+        }
+    }
     
+    hideButton();
     updateBadges();
       
     var targetNode = document.getElementById('main');
@@ -17,6 +26,7 @@
     // Callback function to execute when mutations are observed
     var callback = function(mutationsList, observer) {
         updateBadges();
+        hideButton();
     };
     
     // Create an observer instance linked to the callback function
@@ -25,10 +35,5 @@
     // Start observing the target node for configured mutations
     observer.observe(targetNode, config);
 
-    // Hide create-topic button on categories page
-    if(window.location.href.indexOf("categories") > -1) {
-       $('button#create-topic').hide();
-    }
-    
   });
 </script>
