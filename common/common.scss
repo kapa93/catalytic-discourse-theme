@@ -61,7 +61,7 @@ img#site-logo {
     }
 
     @media screen and (min-width: 1280px) {
-        width: 46% !important;
+        width: 47% !important;
     }
 
     @media screen and (min-width: 1472px) {
@@ -183,11 +183,12 @@ div#main-outlet {
 }
 
 .list-controls .combo-box .combo-box-header {
-    border: none;
     color: #00A5F7 !important;
     font-weight: 500 !important;
     text-transform: capitalize;
     background: none !important;
+    border: 1px solid #00A5F7 !important;
+    border-radius: 5px !important;
 }
 
 .list-controls {
@@ -196,6 +197,16 @@ div#main-outlet {
     .navigation-container {
         margin-top: 11px !important;
         margin-bottom: -15px !important;
+    }
+
+    .category-navigation {
+        .select-kit {
+            .select-kit-header {
+                .caret-icon {
+                    display: none !important;
+                }
+            }
+        }
     }
 
     div.categories-admin-dropdown {
@@ -407,6 +418,7 @@ div.groups-header {
         color: #fff !important;
         padding: 7px 12px 6px 12px !important;
         font-size: 1.1em !important;
+        border-radius: 5px !important;
 
         i.fa-plus {
             position: relative !important;
