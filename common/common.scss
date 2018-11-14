@@ -240,6 +240,9 @@ div#main-outlet {
     .navigation-container {
         margin-top: 11px !important;
         margin-bottom: -15px !important;
+        @media screen and (max-width: 500px) {
+            margin-bottom: 10px !important;
+        }
     }
 
     .category-navigation {
