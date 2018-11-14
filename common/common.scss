@@ -486,13 +486,17 @@ div.groups-header {
 
     .groups-header-filters {
         @media screen and (max-width: 550px) {
-            display: flex !important;
             width: 100% !important;
         }
         input {
             border-radius: 3px !important;
             margin-right: 5px !important;
             outline: none !important;
+            
+            @media screen and (max-width: 550px) {
+                width: 100% !important;
+                display: flex !important;
+            }
             
             @media screen and (max-width: 424px) {
                 margin-bottom: 10px !important;
@@ -502,7 +506,7 @@ div.groups-header {
             font-weight: 400 !important;
             border-radius: 3px !important;
             @media screen and (max-width: 550px) {
-                display: block !important;
+                display: flex !important;
                 width: 100% !important;
                 
                 i.fa {
