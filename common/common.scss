@@ -574,11 +574,14 @@ a.home-link {
     display: inline-block !important;
     font-size: 17px !important;
     position: relative !important;
-    bottom: -3px !important;
+    bottom: -8px !important;
     color: #000000 !important;
     border-left: 1px solid #B5B5B5 !important;
     padding-left: 10px !important;
     margin-left: 5px !important;
+    @media screen and (max-width: 550px) {
+        bottom: -3px !important;
+    }
 }
 
 .navigation-container {
