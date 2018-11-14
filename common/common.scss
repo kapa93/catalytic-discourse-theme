@@ -620,3 +620,17 @@ div.groups-header {
         width: 41% !important; 
     }
 }
+
+@media screen and (max-width: 500px) {
+    .topic-list {
+        tbody {
+            .topic-list-item {
+                min-height: 60px !important;
+            }
+        }
+        
+        .num.activity a {
+            display: none !important;
+        }
+    }
+}
