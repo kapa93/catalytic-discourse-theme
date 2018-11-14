@@ -634,3 +634,9 @@ div.groups-header {
         }
     }
 }
+
+body.navigation-topics {
+    .multi-select-header, .select-kit.single-select {
+        border: none !important;
+    }
+}
