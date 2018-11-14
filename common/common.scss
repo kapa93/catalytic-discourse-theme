@@ -244,6 +244,10 @@ div#main-outlet {
         @media screen and (max-width: 500px) {
             margin-bottom: -5px !important;
         }
+
+        @media screen and (min-width: 501px) {
+            display: flex !important;
+        }
     }
 
     .category-navigation {
@@ -283,6 +287,10 @@ div#main-outlet {
             top: .7px !important;
         }
     }
+}
+
+.list-controls .nav {
+    margin-left: -5px !important;
 }
 
 .nav-pills>li>a {
