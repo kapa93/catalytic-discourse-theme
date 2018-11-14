@@ -49,6 +49,7 @@ div.ac-wrap {
     border-radius: 3px !important;
     border: 1px solid #d1d1d1 !important;
     width: 100% !important;
+    margin-right: 5px !important;
 }
 
 .select-kit.single-select {
@@ -474,7 +475,6 @@ div.groups-header {
         @media screen and (max-width: 550px) {
             margin-bottom: 10px !important;
             float: left !important;
-            display: flex !important;
         }
 
         i.fa-plus {
@@ -485,8 +485,10 @@ div.groups-header {
     }
 
     .groups-header-filters {
+        display: flex !important;
         @media screen and (max-width: 550px) {
             width: 100% !important;
+            display: inline-block !important;
         }
         input {
             border-radius: 3px !important;
@@ -494,16 +496,16 @@ div.groups-header {
             outline: none !important;
             
             @media screen and (max-width: 550px) {
+                margin-bottom: 10px !important;
                 width: 100% !important;
-                display: flex !important;
             }
         }
-        
+
         .select-kit.combo-box .select-kit-header {
             font-weight: 400 !important;
             border-radius: 3px !important;
             @media screen and (max-width: 550px) {
-                display: flex !important;
+                display: block !important;
                 width: 100% !important;
                 
                 i.fa {
