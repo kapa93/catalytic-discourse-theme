@@ -514,12 +514,16 @@ a.home-link {
 }
 
 div.groups-header {
-    @media screen and (max-width: 971px) {
-        width: 69% !important;
-    }
-
     @media screen and (max-width: 780px) {
         width: 100% !important;
+    }
+    
+    @media screen and (min-width: 781px) {
+        width: 71% !important;
+    }
+    
+    @media screen and (min-width: 980px) {
+        width: 56% !important;
     }
 
     @media screen and (min-width: 1088px) {
