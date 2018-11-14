@@ -481,7 +481,7 @@ div.groups-header {
         border-radius: 3px !important;
 
         @media screen and (max-width: 550px) {
-            margin-bottom: 10px !important;
+            margin-bottom: 0 !important;
             float: left !important;
             display: flex !important
         }
@@ -505,7 +505,7 @@ div.groups-header {
             outline: none !important;
             
             @media screen and (max-width: 550px) {
-                margin-bottom: 5px !important;
+                margin-bottom: 0 !important;
                 width: 100% !important;
             }
         }
