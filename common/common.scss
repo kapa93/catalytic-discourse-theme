@@ -17,12 +17,14 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-    table {
-        max-width: 100% !important;
-        width: 100% !important;
-        overflow-x: scroll !important;
-        position: relative !important;
-        display: block !important;
+    body.groups-page {
+        table {
+            max-width: 100% !important;
+            width: 100% !important;
+            overflow-x: scroll !important;
+            position: relative !important;
+            display: block !important;
+        }
     }
 }
 
@@ -424,7 +426,7 @@ div.column.categories {
     input.filter-name {
         float: left !important;
         margin-left: 40px !important;
-        border-radius: 5px !important;
+        border-radius: 3px !important;
         border: 1px solid #ababab !important;
     }
 }
@@ -464,7 +466,7 @@ div.groups-header {
         color: #fff !important;
         padding: 7px 12px 6px 12px !important;
         font-size: 1.1em !important;
-        border-radius: 5px !important;
+        border-radius: 3px !important;
 
         @media screen and (max-width: 550px) {
             margin-bottom: 10px !important;
@@ -485,7 +487,7 @@ div.groups-header {
             width: 100% !important;
         }
         input {
-            border-radius: 5px !important;
+            border-radius: 3px !important;
             margin-right: 5px !important;
             outline: none !important;
             
@@ -495,8 +497,7 @@ div.groups-header {
         }
         .select-kit.combo-box .select-kit-header {
             font-weight: 400 !important;
-            border-radius: 5px !important;
-            border: 1px solid #919191 !important;
+            border-radius: 3px !important;
             @media screen and (max-width: 550px) {
                 display: block !important;
                 width: 100% !important;
@@ -510,7 +511,7 @@ div.groups-header {
 }
 
 .select-kit.is-expanded .select-kit-body {
-    border-radius: 5px !important;
+    border-radius: 3px !important;
 }
 
 .search-field {
