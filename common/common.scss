@@ -396,6 +396,10 @@ div.groups-header {
     @media screen and (max-width: 670px) {
         width: 100% !important;
     }
+    
+    @media screen and (max-width: 550px) {
+        display: inline-block;
+    }
 
     button.groups-header-new {
         width: 126px !important;
@@ -408,6 +412,7 @@ div.groups-header {
         @media screen and (max-width: 550px) {
             margin-bottom: 10px !important;
             float: left !important;
+            display: flex !important;
         }
 
         i.fa-plus {
@@ -418,11 +423,15 @@ div.groups-header {
     }
 
     .groups-header-filters {
+        @media screen and (max-width: 550px) {
+            display: flex !important;
+            width: 100% !important;
+        }
         input {
             border-radius: 5px !important;
             margin-right: 5px !important;
             outline: none !important;
-
+            
             @media screen and (max-width: 424px) {
                 margin-bottom: 10px !important;
             }
@@ -431,6 +440,14 @@ div.groups-header {
             font-weight: 400 !important;
             border-radius: 5px !important;
             border: 1px solid #919191 !important;
+            @media screen and (max-width: 550px) {
+                display: block !important;
+                width: 100% !important;
+                
+                i.fa {
+                    display: none !important;
+                }
+            }
         }
     }
 }
@@ -492,6 +509,10 @@ a.home-link {
 }
 
 .navigation-container {
+    @media screen and (max-width: 500px) {
+        margin-bottom: 10px !important;
+    }
+    
     @media screen and (max-width: 971px) {
         width: 56% !important;
     }
