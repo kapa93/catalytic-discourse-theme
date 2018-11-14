@@ -391,8 +391,6 @@ div.groups-header {
     position: relative !important;
     z-index: 5 !important;
     width: 56% !important;
-    flex-direction: column-reverse !important;
-    display: flex !important;
     margin-bottom: 25px !important;
     margin-top: 10px !important;
     @media screen and (max-width: 670px) {
@@ -401,7 +399,7 @@ div.groups-header {
 
     button.groups-header-new {
         width: 126px !important;
-        background-color: #33cccc !important;
+        background-color: #00A5F7 !important;
         color: #fff !important;
         padding: 7px 12px 6px 12px !important;
         font-size: 1.1em !important;
