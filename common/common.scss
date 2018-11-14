@@ -16,10 +16,67 @@ body {
     margin-bottom: 10px;
 }
 
-textarea, select, input, button { outline: none !important; }
+@media screen and (max-width: 767px) {
+    table {
+        max-width: 100% !important;
+        width: 100% !important;
+        overflow-x: scroll !important;
+        position: relative !important;
+        display: block !important;
+    }
+}
 
-input:focus {
-    outline:none !important;
+textarea, select, input, button { 
+    outline: none !important; 
+}
+
+input, .input-xxlarge {
+    max-width: 100% !important;
+    border-radius: 3px !important;
+    border: 1px solid #d1d1d1 !important;
+}
+
+div.ac-wrap {
+    border: 1px solid #d1d1d1 !important;
+    input {
+        border: none !important;
+    }
+}
+
+.multi-select-header, .select-kit.single-select {
+    border-radius: 3px !important;
+    border: 1px solid #d1d1d1 !important;
+    width: 100% !important;
+}
+
+.select-kit.single-select {
+    .select-kit-header {
+        border: none !important;
+    }
+}
+
+.multi-select-filter {
+    input {
+        border: none !important;
+    }
+}
+
+.group-flair-inputs {
+    border-radius: 3px !important;
+}
+
+.ac-wrap.clearfix {
+    border-radius: 3px !important;
+}
+
+@media screen and (max-width: 500px) {
+    .group-flair-inputs {
+        width: 100% !important;
+    }
+    
+    .input-xxlarge {
+        width: 100% !important;
+    }
 }
 
 body input,
