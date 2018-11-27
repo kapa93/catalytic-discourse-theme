@@ -172,6 +172,17 @@ img#site-logo {
                 display: none !important;
                 z-index: -1 !important;
             }
+
+            a.badge-notification {
+                position: absolute !important;
+                z-index: 1 !important;
+                top: -4px !important;
+                right: 23px !important;
+                min-width: 14px !important;
+                min-height: 14px !important;
+                border-radius: 50% !important;
+                line-height: 1.2 !important;
+            }
         }
 
         .header-dropdown-toggle:nth-child(2) {
