@@ -332,6 +332,16 @@ img#site-logo {
                 }
             }
         }
+
+        div.category-notifications-button {
+          position: relative !important;
+          border: none !important;
+
+          button.select-kit-header {
+            position: absolute !important;
+            width: 50px !important;
+          }
+        }
     }
 
     div.categories-admin-dropdown {
