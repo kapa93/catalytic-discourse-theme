@@ -339,8 +339,13 @@ img#site-logo {
 
           button.select-kit-header {
             position: absolute !important;
-            width: 50px !important;
+            width: 200px !important;
+            margin-left: 5px !important;
           }
+        }
+
+        button.edit-category {
+            width: 200px !important;
         }
     }
 
@@ -661,6 +666,18 @@ div.column.categories {
         margin-left: 40px !important;
         border-radius: 3px !important;
         border: 1px solid #ababab !important;
+    }
+
+    div.period-chooser {
+      width: 200px !important;
+      border: 1px solid #ababab !important;
+      
+      button.period-chooser-header {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        height: 30px !important;
+        padding-left: 22px !important;
+      }
     }
 }
 
