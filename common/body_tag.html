@@ -1,5 +1,13 @@
 <script type="text/javascript">
   $(document).ready(function(){
+    
+    $('button.toggle-sidebar').click(function() {
+        $('.search-advanced-sidebar').toggle();
+    });
+    
+    $('.notification button.delete').click(function() {
+        $('.notification.is-info').css('bottom', '-100%');
+    });
       
     // Updates badge background-color if string is not equal to 0
     var updateBadges = function() {
@@ -15,6 +23,12 @@
         if(window.location.href.indexOf("categories") > -1) {
            $('button#create-topic').hide();
         }
+    }
+    
+    if (window.location.href.indexOf("search") > -1 && $(window).width() <= 768){
+        $('button.toggle-sidebar').show();
+    } else {
+        $('button.toggle-sidebar').hide();
     }
     
     hideButton();
