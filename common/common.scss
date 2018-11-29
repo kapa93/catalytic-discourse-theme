@@ -1081,9 +1081,14 @@ body.navigation-categories {
     }
 }
 
+.notification.is-info {
+    display: none;
+}
+
 // privacy disclaimer
 body.navigation-topics {
-  div.notification.is-info {
+  .notification.is-info {
+      display: block;
       text-align: center !important;
       position: fixed !important;
       bottom: 0;
@@ -1093,10 +1098,10 @@ body.navigation-topics {
       font-size: 1.2em !important;
       width: 100% !important;
       left: 0 !important;
-      transition: all 1000ms cubic-bezier(0.17, 0.04, 0.03, 0.94) !important;
+      transition: bottom 1000ms ease !important;
       overflow: hidden;
       box-sizing: border-box;
-      transition-delay: .15s !important;
+      transition-delay: .05s !important;
 
       a {
           text-decoration: none !important;
@@ -1121,3 +1126,11 @@ body.navigation-topics {
   }
 }
 
+
+html.anon {
+    body.navigation-topics {
+        .notification.is-info {
+            display: none;
+        }
+    }
+}
