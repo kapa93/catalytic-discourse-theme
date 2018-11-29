@@ -243,6 +243,7 @@ img#site-logo {
 
 .list-controls {
     margin-bottom: 0;
+    margin-top: -10px;
 
     .nav {
         margin-left: -5px !important;
@@ -1085,7 +1086,11 @@ body.navigation-categories {
     display: none;
 }
 
-// privacy disclaimer
+/*
+*****************************************
+** Privacy disclaimer (blue notification)
+*****************************************
+*/
 body.navigation-topics {
   .notification.is-info {
       display: block;
@@ -1126,11 +1131,18 @@ body.navigation-topics {
   }
 }
 
-
+// Don't show disclaimer when not logged-in.
 html.anon {
     body.navigation-topics {
         .notification.is-info {
-            display: none;
+            display: none !important;
         }
     }
 }
+
+/*
+*****************************************
+** End of privacy disclaimer (blue notification)
+*****************************************
+*/
+
