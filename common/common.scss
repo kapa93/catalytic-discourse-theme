@@ -1038,6 +1038,7 @@ body.staff {
 }
 
 #reply-control.open {
+    z-index: 3005 !important;
     .grippie {
         background: #33cccc;
     }
