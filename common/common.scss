@@ -373,10 +373,10 @@ img#site-logo {
         @media screen and (max-width: 768px) {
             float: right;
             right: 91px;
-            text-indent: 6px !important;
+            text-indent: 5px !important;
             top: -143px !important;
             width: 65px !important;
-            padding: 6px 20px 6px 0 !important;
+            padding: 7px 20px 6px 0 !important;
         }
 
         span.d-button-label {
@@ -393,6 +393,13 @@ img#site-logo {
             @media screen and (max-width: 768px) {
                 margin-right: 0 !important;
                 margin-left: -5px;
+            }
+        }
+
+        svg.d-icon-plus {
+            @media screen and (max-width: 768px) {
+                margin-right: -2px !important;
+                margin-left: 1px !important;
             }
         }
     }
