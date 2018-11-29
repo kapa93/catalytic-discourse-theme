@@ -1039,6 +1039,15 @@ body.staff {
 
 #reply-control.open {
     z-index: 3005 !important;
+    max-width: 100% !important;
+    .reply-area {
+        max-width: 1475px !important;
+        .d-editor-preview-wrapper {
+            background: #F8F8F8 !important;
+            padding: 10px !important;
+            border-radius: 3px !important;
+        }
+    }
     .grippie {
         background: #33cccc;
     }
