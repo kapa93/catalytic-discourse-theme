@@ -1046,6 +1046,9 @@ body.staff {
             background: #F8F8F8 !important;
             padding: 10px !important;
             border-radius: 3px !important;
+            @media screen and (max-width: 768px) {
+                display: none !important;
+            }
         }
     }
     .grippie {
