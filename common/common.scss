@@ -119,7 +119,7 @@ img#site-logo {
   
     ul.d-header-icons {
         top: -154px !important;
-        
+
         @media screen and (max-width: 768px) {
             top: -125px !important;
         }
@@ -189,7 +189,7 @@ img#site-logo {
 
         .header-dropdown-toggle:nth-child(2) {
             margin-right: 8px !important;
-            top: -9px !important;
+            top: 0 !important;
         }
     }
 }
