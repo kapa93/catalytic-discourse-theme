@@ -5,8 +5,10 @@
         $('.search-advanced-sidebar').toggle();
     });
     
+    $('.notification.is-info').addClass('appear');
+    
     $('.notification button.delete').click(function() {
-        $('.notification.is-info').css('bottom', '-100%');
+        $('.notification.is-info').removeClass('appear');
     });
       
     // Updates badge background-color if string is not equal to 0
