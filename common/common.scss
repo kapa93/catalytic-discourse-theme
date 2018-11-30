@@ -118,6 +118,8 @@ img#site-logo {
   }
   
     ul.d-header-icons {
+        top: -154px !important;
+        
         @media screen and (max-width: 768px) {
             top: -125px !important;
         }
@@ -187,6 +189,7 @@ img#site-logo {
 
         .header-dropdown-toggle:nth-child(2) {
             margin-right: 8px !important;
+            top: -9px !important;
         }
     }
 }
@@ -469,11 +472,12 @@ img#site-logo {
 
 .header-buttons {
     position: relative !important;
-    top: -147px !important;
+    top: -155px !important;
     right: 0px !important;
 
     button.btn {
-        min-height: 26px !important;
+        min-height: 20px !important;
+        padding: 6px 7px !important;
     }
 
     button.sign-up-button {
