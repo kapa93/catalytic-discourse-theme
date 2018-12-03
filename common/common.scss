@@ -241,7 +241,7 @@ img#site-logo {
     border: none;
     border-radius: 5px !important;
     position: relative !important;
-    bottom: -1px !important;
+    bottom: 0 !important;
 }
 
 .list-controls {
@@ -295,6 +295,18 @@ img#site-logo {
 
         @media screen and (min-width: 1472px) {
             width: 34% !important; 
+        }
+
+        ol.category-breadcrumb {
+            li.category-drop {
+                background: #f2f3f6 !important;
+                border: 1px solid rgb(204, 204, 204) !important;
+
+                span.category-name {
+                    font-weight: 400 !important;
+                    font-size: .95 !important;
+                }
+            }
         }
 
         .nav-pills>li {
@@ -362,16 +374,14 @@ img#site-logo {
         width: 127px !important;
         height: 31px;
         font-size: 1.1em;
-        font-weight: 400 !important;
-        color: #000 !important;
+        color: #fff !important;
         border-radius: 3px !important;
         position: absolute !important;
         box-shadow: none !important;
-        background-color: transparent;
-        padding: 6px 20px 6px 5px;
-        top: 10px !important;
+        background-color: #33cccc;
+        padding: 8px 20px 6px 5px;
+        top: 11px !important;
         right: 20px;
-        border: 1px #000 solid;
 
         @media screen and (max-width: 768px) {
             float: right;
@@ -384,6 +394,7 @@ img#site-logo {
 
         span.d-button-label {
             display: inline-block !important;
+            font-weight: 500 !important;
         }
 
         i {
@@ -392,6 +403,7 @@ img#site-logo {
             color: #000 !important;
             font-weight: 400 !important;
             margin-right: 3px !important;
+            opacity: 1 !important;
             
             @media screen and (max-width: 768px) {
                 margin-right: 0 !important;
@@ -400,6 +412,8 @@ img#site-logo {
         }
 
         svg.d-icon-plus {
+            opacity: 1 !important;
+            left: 2px !important;
             @media screen and (max-width: 768px) {
                 margin-right: -2px !important;
                 margin-left: 1px !important;
@@ -840,7 +854,7 @@ a.home-link {
     color: #2d2d2d !important;
     border-left: 1px solid #B5B5B5 !important;
     padding-left: 9px !important;
-    margin-left: 7px !important;
+    margin-left: 9px !important;
     @media screen and (max-width: 768px) {
         display: none !important;
     }
