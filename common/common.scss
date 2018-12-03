@@ -254,7 +254,7 @@ img#site-logo {
 
     .navigation-container {
         position: relative !important;
-        width: 47% !important;
+        width: 35% !important;
         z-index: 5 !important;
         float: left !important;
         padding-top: 11px !important;
@@ -278,7 +278,7 @@ img#site-logo {
         }
 
         @media screen and (max-width: 971px) {
-            width: 58% !important;
+            width: 46% !important;
         }
 
         @media screen and (max-width: 763px) {
@@ -286,15 +286,15 @@ img#site-logo {
         }
 
         @media screen and (min-width: 1088px) {
-            width: 47% !important;
+            width: 35% !important;
         }
 
         @media screen and (min-width: 1280px) {
-            width: 39% !important;
+            width: 27% !important;
         }
 
         @media screen and (min-width: 1472px) {
-            width: 34% !important; 
+            width: 22% !important; 
         }
 
         ol.category-breadcrumb {
@@ -305,6 +305,11 @@ img#site-logo {
                 span.category-name {
                     font-weight: 400 !important;
                     font-size: .95 !important;
+                }
+
+                svg {
+                    margin-left: 2px !important;
+                    margin-right: 2px !important;
                 }
             }
         }
@@ -400,7 +405,7 @@ img#site-logo {
         i {
             position: relative !important;
             top: .7px !important;
-            color: #000 !important;
+            color: #fff !important;
             font-weight: 400 !important;
             margin-right: 3px !important;
             opacity: 1 !important;
@@ -564,6 +569,10 @@ div#main-outlet {
 
 .title {
     font-weight: 500 !important;
+}
+
+ul#navigation-bar {
+    display: none !important;
 }
 
 @media screen and (max-width: 768px) {
