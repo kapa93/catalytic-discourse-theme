@@ -393,7 +393,7 @@ img#site-logo {
             float: right;
             right: 91px;
             text-indent: 5px !important;
-            top: -125px !important;
+            top: -143px !important;
             width: 65px !important;
             padding: 7px 20px 6px 0 !important;
         }
@@ -404,6 +404,8 @@ img#site-logo {
             @media screen and (max-width: 768px) {
                 width: 35px !important;
                 overflow: hidden !important;
+                position: relative !important;
+                bottom: -2px !important;
             }
         }
 
