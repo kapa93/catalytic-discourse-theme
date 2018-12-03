@@ -1099,6 +1099,15 @@ body.staff {
             background: rgba(32,156,238,0.95) !important;
         }
 
+        .reply-to {
+            .composer-action-title {
+                width: 100%;
+                button {
+                    width: 50px !important;
+                }
+            }
+        }
+
         .d-editor-preview-wrapper {
             background: #F8F8F8 !important;
             padding: 10px !important;
