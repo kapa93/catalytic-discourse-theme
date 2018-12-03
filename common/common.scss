@@ -1102,8 +1102,9 @@ body.staff {
         .reply-to {
             .composer-action-title {
                 width: 100%;
-                button {
-                    width: 50px !important;
+
+                .single-select {
+                    width: 30px !important;
                 }
             }
         }
