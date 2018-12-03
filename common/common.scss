@@ -45,6 +45,11 @@ input, .input-xxlarge {
     border: 1px solid #d1d1d1 !important;
 }
 
+.highlighted {
+    background: transparent !important;
+    animation: none !important;
+}
+
 div.ac-wrap {
     border: 1px solid #d1d1d1 !important;
     input {
@@ -361,6 +366,8 @@ img#site-logo {
 
         button.edit-category {
             width: 127px !important;
+            position: relative !important;
+            left: -10px !important;
         }
     }
 
