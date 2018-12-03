@@ -268,14 +268,15 @@ img#site-logo {
             margin-bottom: 10px !important;
         }
 
-        @media screen and (min-width: 769px) {
-            display: flex !important;
-        }
-        
         @media screen and (max-width: 768px) {
             margin-bottom: -5px !important;
             background: transparent !important;
             width: 100% !important;
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 971px) {
+            display: flex !important;
+            width: 43% !important;
         }
 
         @media screen and (min-width: 1088px) {
@@ -287,7 +288,7 @@ img#site-logo {
         }
 
         @media screen and (min-width: 1472px) {
-            width: 22% !important; 
+            width: 23% !important; 
         }
 
         ol.category-breadcrumb {
