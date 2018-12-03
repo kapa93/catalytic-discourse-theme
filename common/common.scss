@@ -807,6 +807,10 @@ div.groups-header {
     z-index: 500 !important;
     color: #868686 !important;
   }
+
+    .fa-search:before {
+        content: "";
+    }
   
   input {
     background-color: transparent !important;
@@ -833,7 +837,8 @@ div.groups-header {
 
 a.home-link {
     display: inline-block !important;
-    font-size: 21px !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
     position: relative !important;
     bottom: -9.1px !important;
     color: #2d2d2d !important;
@@ -1143,6 +1148,11 @@ body.navigation-topics {
       overflow: hidden;
       box-sizing: border-box;
       transition: bottom 1000ms ease !important;
+
+      .disclaimer-text {
+          max-width: 1475px !important;
+          display: inline-block !important;
+      }
 
       a {
           text-decoration: none !important;
