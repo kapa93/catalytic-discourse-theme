@@ -1164,7 +1164,12 @@ button.toggle-sidebar {
     padding-right: 8px;
     
     @media screen and (max-width: 768px) {
-        top: 237px;    
+        top: 237px;
+        display: inline-block;    
+    }
+
+    i.fa-sliders {
+        margin-right: 5px !important;
     }
 }
 
