@@ -178,12 +178,25 @@ img#site-logo {
                 padding-bottom: 5px !important;
             }
         }
+
+        .menu-container-admin-links {
+            a.widget-link {
+                position: fixed !important;
+                bottom: 20px !important;
+                right: 20px !important;
+            }
+        }
     }
 
     // Hides search icon
     .d-header-icons {
         .header-dropdown-toggle {
             a#search-button {
+                display: none !important;
+                z-index: -1 !important;
+            }
+
+            a#toggle-hamburger-menu {
                 display: none !important;
                 z-index: -1 !important;
             }
@@ -416,7 +429,7 @@ img#site-logo {
             float: right;
             right: 91px;
             text-indent: 5px !important;
-            top: -143px !important;
+            top: -125px !important;
             width: 65px !important;
             padding: 7px 20px 6px 0 !important;
         }
@@ -560,6 +573,7 @@ img#site-logo {
 
         button#new-account-link {
             background: rgba(32,156,238,0.95) !important;
+            color: #fff !important;
         }
     }
 }
@@ -603,7 +617,7 @@ img#site-logo {
 #topic-title {
     position: relative !important;
     z-index: 2 !important;
-    margin-top: 20px !important;
+    margin-top: -20px !important;
 }
 
 .topic-post {
@@ -1003,6 +1017,7 @@ a.home-link {
     font-size: 17px !important;
     font-weight: 500 !important;
     position: relative !important;
+    bottom: -9px !important;
     color: #2d2d2d !important;
     border-left: 1px solid #B5B5B5 !important;
     padding-left: 11px !important;
@@ -1165,7 +1180,7 @@ button.toggle-sidebar {
     
     @media screen and (max-width: 768px) {
         top: 237px;
-        display: inline-block;    
+        display: inline-block;
     }
 
     i.fa-sliders {
@@ -1377,12 +1392,3 @@ html.anon {
 ** End of privacy disclaimer (blue notification)
 *****************************************
 */
-
-// Hide menu toggle
-html.anon {
-    .d-header {
-        .header-dropdown-toggle {
-            display: none !important;
-        }
-    }
-}

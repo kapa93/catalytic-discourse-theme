@@ -26,15 +26,18 @@
            $('button#create-topic').hide();
         }
     }
-    
-    if (window.location.href.indexOf("search") > -1 && $(window).width() <= 768){
-        $('button.toggle-sidebar').show();
-    } else {
-        $('button.toggle-sidebar').hide();
+
+    var hideFilter = function() {
+        if (window.location.href.indexOf("search") > -1 && $(window).width() <= 768){
+            $('button.toggle-sidebar').show();
+        } else {
+            $('button.toggle-sidebar').hide();
+        }
     }
     
     hideButton();
     updateBadges();
+    hideFilter();
       
     var targetNode = document.getElementById('main');
     var config = { attributes: true, childList: true, subtree: true };
@@ -43,6 +46,7 @@
     var callback = function(mutationsList, observer) {
         updateBadges();
         hideButton();
+        hideFilter();
     };
     
     // Create an observer instance linked to the callback function
