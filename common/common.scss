@@ -17,6 +17,11 @@ body {
     @media screen and (max-width: 768px) {
         margin-bottom: -20px;
     }
+
+    .header-titles {
+        position: relative;
+        top: -5px;
+    }
 }
 
 button {
@@ -123,7 +128,7 @@ img#site-logo {
   }
   
     ul.d-header-icons {
-        top: -154px !important;
+        top: -157px !important;
 
         @media screen and (max-width: 768px) {
             top: -125px !important;
@@ -259,6 +264,7 @@ img#site-logo {
 
     .navigation-container {
         position: relative !important;
+        top: -10px !important;
         width: 33% !important;
         z-index: 5 !important;
         float: left !important;
@@ -309,6 +315,19 @@ img#site-logo {
                 svg {
                     margin-left: 2px !important;
                     margin-right: 2px !important;
+                }
+
+                .select-kit-body {
+                    min-width: 170px !important;
+                    width: 170px !important;
+                    .select-kit-row.is-highlighted {
+                        background: #33cccc;
+                        .category-status {
+                            span {
+                                color: #fff !important;
+                            }
+                        }
+                    }
                 }
             }
         }
