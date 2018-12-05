@@ -27,6 +27,10 @@ body {
     }
 }
 
+#list-area {
+    margin-bottom: 50px !important;
+}
+
 button {
     border-radius: 3px !important;
 }
@@ -116,6 +120,36 @@ body textarea {
 img#site-logo {
   display: none !important;
 }
+
+/*
+*******************
+** Footer nav links
+*******************
+*/
+
+.container.bottom-nav {
+    position: relative;
+    bottom: 10px;
+    
+    .footer-nav {
+        text-align: right;
+    
+        a {
+            color: #868686 !important;
+            cursor: pointer !important;
+        }
+    
+        a.settings {
+            margin-right: 10px;
+        }
+    }
+}
+
+/*
+**************************
+** End of footer nav links
+**************************
+*/
 
 /*
 ******************************************
