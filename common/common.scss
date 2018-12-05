@@ -128,11 +128,40 @@ img#site-logo {
 */
 
 .container.bottom-nav {
-    position: relative;
-    bottom: 10px;
+    position: fixed;
+    bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    width: 100% !important;
+    max-width: 100% !important;
+    background: #fff;
     
     .footer-nav {
         text-align: right;
+        display: inline-block;
+        max-width: 87%;
+        width: 87%;
+
+@media screen and (max-width: 400px) {
+    max-width: 83%;
+    width: 83%;
+}
+        
+@media screen and (min-width: 1088px) {
+    max-width: 960px;
+    width: 960px;
+}
+ 
+@media screen and (min-width: 1280px) {
+    max-width: 1152px;
+    width: 1152px;
+} 
+       
+@media screen and (min-width: 1472px) {
+    max-width: 1344px;
+    width: 1344px;
+}
     
         a {
             color: #868686 !important;
@@ -183,15 +212,15 @@ img#site-logo {
     }
     
     .user-menu .menu-panel {
-        top: -98px !important;
+        top: -138px !important;
         
         @media screen and (max-width: 1086px) {
-            top: 85px !important;
+            top: 60px !important;
             right: 10px !important;
         }
         
         @media screen and (max-width: 768px) {
-            top: 75px !important;
+            top: 62px !important;
             right: 0px !important;
             min-height: 130px !important;
             padding-bottom: 5px !important;
@@ -461,9 +490,9 @@ img#site-logo {
 
         @media screen and (max-width: 768px) {
             float: right;
-            right: 91px;
+            right: 65px;
             text-indent: 5px !important;
-            top: -125px !important;
+            top: -124px !important;
             width: 65px !important;
             padding: 7px 20px 6px 0 !important;
         }
@@ -941,7 +970,7 @@ div.groups-header {
     }
 
     button.groups-header-new {
-        width: 126px !important;
+        min-width: 126px !important;
         background-color: #00A5F7 !important;
         color: #fff !important;
         padding: 7px 12px 6px 12px !important;
