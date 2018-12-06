@@ -5,10 +5,14 @@
         $('.search-advanced-sidebar').toggle();
     });
     
-    $('.notification.is-info').addClass('appear');
+    var alert = sessionStorage.getItem("alert");
+    if (alert !== "hide") {
+        $('.notification.is-info').addClass('appear');
+    }
     
     $('.notification button.delete').click(function() {
         $('.notification.is-info').removeClass('appear');
+        sessionStorage.setItem("alert", "hide");
     });
       
     // Updates badge background-color if string is not equal to 0

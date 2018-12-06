@@ -122,6 +122,33 @@ img#site-logo {
 }
 
 /*
+***************************
+** Badges and notifications
+***************************
+*/
+
+.badge-notification.clicks {
+    max-width: 26px !important;
+    max-height: 26px !important;
+
+    span.number {
+        font-size: .9rem !important;
+        height: 20px !important;
+        width: 20px !important;
+        min-width: 20px !important;
+        border-radius: 50% !important;
+        position: relative !important;
+        left: -2px !important;
+    }
+}
+
+/*
+**********************************
+** End of badges and notifications
+**********************************
+*/
+
+/*
 *******************
 ** Footer nav links
 *******************
@@ -130,8 +157,8 @@ img#site-logo {
 .container.bottom-nav {
     position: fixed;
     bottom: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     text-align: center;
     width: 100% !important;
     max-width: 100% !important;
@@ -708,6 +735,9 @@ img#site-logo {
     position: relative !important;
     top: -170px !important;
     right: -10px !important;
+    @media screen and (max-width: 768px) {
+        top: -137px !important;
+    }
 
     button.btn {
         min-height: 20px !important;
@@ -1091,6 +1121,9 @@ a.home-link {
         z-index: 2000 !important;
         left: -92px !important;
         padding-left: 7px !important;
+        top: 6px !important;
+        font-size: 19px !important;
+        font-weight: 400 !important;
     }
 }
 
