@@ -62,6 +62,30 @@ input, .input-xxlarge {
     animation: none !important;
 }
 
+.user-stream {
+    .group-member-info {
+        margin-top: 5px !important;
+
+        span.title {
+            font-size: 1em !important;
+            position: relative !important;
+            bottom: -3px !important;
+        }
+    }
+
+    .stream-topic-title {
+        span.title {
+            font-size: 1.7rem !important;
+        }
+    }
+}
+
+.consent_banner {
+    position: relative !important;
+    top: -30px !important;
+    z-index: 3000 !important;
+}
+
 div.ac-wrap {
     border: 1px solid #d1d1d1 !important;
     input {
@@ -518,10 +542,12 @@ img#site-logo {
         @media screen and (max-width: 768px) {
             float: right;
             right: 65px;
-            text-indent: 5px !important;
-            top: -124px !important;
+            text-indent: 4px !important;
+            top: -115px !important;
             width: 65px !important;
-            padding: 7px 20px 6px 0 !important;
+            white-space: nowrap !important;
+            overflow: hidden !important;
+            padding: 7px 0 6px 3px !important;
         }
 
         span.d-button-label {
@@ -531,7 +557,8 @@ img#site-logo {
                 width: 35px !important;
                 overflow: hidden !important;
                 position: relative !important;
-                bottom: -2px !important;
+                bottom: -1px !important;
+                right: -2px !important;
             }
         }
 
@@ -731,6 +758,12 @@ img#site-logo {
     }
 }
 
+@media screen and (max-width: 768px) {
+    div#topic-progress-wrapper.docked {
+        //display: none !important;
+    }
+}
+
 .header-buttons {
     position: relative !important;
     top: -170px !important;
@@ -751,6 +784,9 @@ img#site-logo {
 }
 
 li.current-user {
+    @media screen and (max-width: 768px) {
+        top: -115px !important;
+    }
     a {
         padding: 0 !important;
     }
@@ -828,6 +864,10 @@ ul#navigation-bar {
     ol.category-breadcrumb {
         display: none !important;
     }
+}
+
+div.category-list-item.category {
+    border-top: none !important;
 }
 
 .posts-map {
@@ -1215,7 +1255,7 @@ body.navigation-topics {
     }
     
     .topic-list th:last-of-type, .topic-list td:last-of-type {
-        display: none !important;
+        //display: none !important;
     }
     
     .topic-post {
@@ -1267,7 +1307,7 @@ button.toggle-sidebar {
     display: none;
     position: absolute;
     right: 25px;
-    z-index: 3;
+    z-index: 100;
     top: 215px;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -1276,7 +1316,7 @@ button.toggle-sidebar {
     
     @media screen and (max-width: 768px) {
         top: 237px;
-        display: inline-block;
+        display: none !important;
     }
 
     i.fa-sliders {
