@@ -758,9 +758,9 @@ img#site-logo {
     }
 }
 
-@media screen and (max-width: 768px) {
+html.mobile-view {
     div#topic-progress-wrapper.docked {
-        //display: none !important;
+        display: none !important;
     }
 }
 
