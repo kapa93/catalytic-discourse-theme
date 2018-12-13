@@ -1507,12 +1507,21 @@ body.search-page {
                 left: 160px !important;
                 top: 48px !important;
                 z-index: 100 !important;
-                width: 170px !important;
+                width: 216px !important;
+
+                #bulk-select {
+                    position: relative !important;
+                    float: right !important;
+                    top: -35px !important;
+                    margin-left: 3px !important;
+                }
 
                 .fps-select {
                     display: inline-block !important;
                     position: relative !important;
-                    float: right !important;
+                    float: left !important;
+                    left: 40px !important;
+                    margin-left: 5px !important;
                     top: -25px !important;
                 }
             }
