@@ -1303,50 +1303,9 @@ body.navigation-topics {
   top: 75px !important;
 }
 
-button.toggle-sidebar {
-    display: none;
-    position: absolute;
-    right: 25px;
-    z-index: 100;
-    top: 215px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 8px;
-    padding-right: 8px;
-    
-    @media screen and (max-width: 768px) {
-        top: 237px;
-        display: none !important;
-    }
-
-    i.fa-sliders {
-        margin-right: 5px !important;
-    }
-}
-
 .search-container {
     .search-advanced {
         width: 100% !important;
-    }
-
-    @media screen and (max-width: 768px) {
-        .search-advanced-sidebar {
-            display: none;
-            position: absolute;
-            z-index: 3;
-            right: 5px;
-            width: 80%;
-            top: 115px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-            
-            .search-advanced-title {
-                display: none !important;
-            }
-            
-            .search-advanced-filters {
-                padding: 10px;
-            }
-        }
     }
     
     button#create-topic {
