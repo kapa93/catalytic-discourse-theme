@@ -1487,3 +1487,12 @@ html.anon {
 ** End of privacy disclaimer (blue notification)
 *****************************************
 */
+
+body.search-page {
+    .search-advanced-sidebar {
+        div.search-bar {
+            display: none !important;
+        }
+    }
+}
+
