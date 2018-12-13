@@ -1514,6 +1514,12 @@ body.search-page {
                     float: right !important;
                     top: -35px !important;
                     margin-left: 3px !important;
+
+                    @media screen and (max-width: 400px) {
+                        position: absolute !important;
+                        top: -33px !important;
+                        right: 42px !important;
+                    }
                 }
 
                 .fps-select {
