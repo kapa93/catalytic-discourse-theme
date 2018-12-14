@@ -2,12 +2,13 @@
   $(document).ready(function(){
 
       var url = window.location.href;
-      if (url.indexOf("search") != -1 && typeof(Storage) !== "undefined") {
+      if (url.indexOf("search") != -1 && localStorage.getItem("query") !== null) {
         var storedQuery = localStorage.getItem("query");
         $('.search-field form input.prompt').attr("placeholder", storedQuery);
+      } else if (localStorage.getItem("query") === null) {
+        $('.search-field form input.prompt').attr("placeholder", "Search for answers...");  
       } else if (url.indexOf("search") == -1) {
         localStorage.removeItem("query");
-        //$('.search-field form input.prompt').val("Search for answers...");
       }
 
     $('.search-field form').submit(function(){

@@ -1511,6 +1511,10 @@ body.search-page {
 
         .search-advanced {
             position: relative !important;
+            top: -20px;
+            @media screen and (max-width: 700px) {
+                top: -5px;
+            }
 
             .search-title {
                 display: inline-block !important;
