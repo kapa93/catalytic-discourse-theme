@@ -1,6 +1,25 @@
 <script type="text/javascript">
   $(document).ready(function(){
-    
+
+      var url = window.location.href;
+      if (url.indexOf("search") != -1 && typeof(Storage) !== "undefined") {
+        var storedQuery = localStorage.getItem("query");
+        $('.search-field form input.prompt').attr("placeholder", storedQuery);
+      } else if (url.indexOf("search") == -1) {
+        localStorage.removeItem("query");
+        //$('.search-field form input.prompt').val("Search for answers...");
+      }
+
+    $('.search-field form').submit(function(){
+        localStorage.removeItem("query");
+        var searchQuery = $('.search-field form input.prompt').val();
+        if (searchQuery !== "") {
+            localStorage.setItem("query", searchQuery);
+        } else {
+            console.log("no search query");
+        }
+    });
+
     var alert = sessionStorage.getItem("alert");
     if (alert !== "hide") {
         $('.notification.is-info').addClass('appear');

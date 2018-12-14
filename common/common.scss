@@ -1498,6 +1498,17 @@ body.search-page {
         position: relative !important;
         top: -20px !important;
 
+        .search-advanced-sidebar {
+            .search-advanced-title.btn {
+                font-weight: 400 !important;
+                padding-top: .47em !important;
+
+                svg {
+                    top: .8px !important;
+                }
+            }
+        }
+
         .search-advanced {
             position: relative !important;
 
